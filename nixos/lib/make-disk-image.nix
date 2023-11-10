@@ -500,6 +500,7 @@ let format' = format; in let
     ''}
 
     echo "copying staging root to image..."
+    echo "$diskImage"
     cptofs -p ${optionalString (partitionTableType != "none") "-P ${rootPartition}"} \
            -t ${fsType} \
            -i $diskImage \
