@@ -51,22 +51,6 @@ let
       jsonsir
     ];
   };
-
-  bloodhound-py = buildPythonPackage rec {
-    pname = "bloodhound-py";
-    version = "1.6.1";
-    doCheck = false;
-    src = fetchPypi {
-      inherit version;
-      pname = "bloodhound";
-      hash = "sha256-SRP74I5euKJErnSkm6OSdAwznv/ZQeEtNG4XofnIEec=";
-    };
-    propagatedBuildInputs = with python.pkgs; [
-      impacket
-      ldap
-      dnspython
-    ];
-  };
 in
 python.pkgs.buildPythonApplication rec {
   pname = "NetExec";
