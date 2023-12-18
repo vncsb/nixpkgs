@@ -5816,6 +5816,8 @@ self: super: with self; {
 
   jsonfield = callPackage ../development/python-modules/jsonfield { };
 
+  jsonform = callPackage ../development/python-modules/jsonform { };
+
   jsonlines = callPackage ../development/python-modules/jsonlines { };
 
   json-logging = callPackage ../development/python-modules/json-logging { };
@@ -5867,6 +5869,8 @@ self: super: with self; {
   jsonschema-spec = callPackage ../development/python-modules/jsonschema-spec { };
 
   jsonschema-specifications = callPackage ../development/python-modules/jsonschema-specifications { };
+
+  jsonsir = callPackage ../development/python-modules/jsonsir { };
 
   jsonstreams = callPackage ../development/python-modules/jsonstreams { };
 
@@ -11611,6 +11615,8 @@ self: super: with self; {
   python-doi = callPackage ../development/python-modules/python-doi { };
 
   python-dotenv = callPackage ../development/python-modules/python-dotenv { };
+
+  python-easyconfig = callPackage ../development/python-modules/python-easyconfig { };
 
   python-editor = callPackage ../development/python-modules/python-editor { };
 
