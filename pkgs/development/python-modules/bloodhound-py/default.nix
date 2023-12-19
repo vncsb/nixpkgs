@@ -2,7 +2,6 @@
 , fetchPypi
 , python3
 }:
-
 python3.pkgs.buildPythonPackage rec {
   pname = "bloodhound-py";
   version = "1.7.1";
